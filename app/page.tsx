@@ -1,5 +1,8 @@
+
 export default function page() {
   return (
-    <div>page</div>
-  )
+    <main className="bg-[#FFF9E9]">
+      <section></section>
+    </main>
+  );
 }
