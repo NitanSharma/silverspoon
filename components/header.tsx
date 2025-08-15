@@ -29,7 +29,7 @@ export default function Header() {
   const activePathName = usePathname();
 
   return (
-    <header className="flex justify-between items-center border-b border-black h-14 md:px-9 px-3">
+    <header className="flex justify-between backdrop-blur-2xl bg-transparent items-center border-b border-black h-14 md:px-9 px-3 fixed top-0 w-full z-50">
       <h1 className='flex items-center font-bold'>
         SilverSpon{' '}
         <span>

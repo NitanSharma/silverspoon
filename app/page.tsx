@@ -1,8 +1,9 @@
+import HeroSection from "@/components/HeroSection";
 
 export default function page() {
   return (
-    <main className="bg-[#FFF9E9]">
-      <section></section>
+    <main className="bg-[#FFF9E9] w-full min-h-screen ">
+        <HeroSection />
     </main>
   );
 }
