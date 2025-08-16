@@ -2,7 +2,7 @@ import { Button } from './ui/button';
 
 export default function HeroSection() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 container px-4 py-28 min-h-screen ">
+    <section className="grid grid-cols-1 md:grid-cols-2 container px-4 py-28 min-h-screen bg-[#FFF9EA] ">
       <div className="flex flex-col items-center justify-center gap-4">
         <h1 className="font-bold text-5xl md:text-6xl">
           Be The Fastest In <br /> Delivery Your{' '}
@@ -16,8 +16,7 @@ export default function HeroSection() {
       </div>
       <div className="flex flex-col items-center justify-center ">
         svg-section
-       </div>
-      
+      </div>
     </section>
   );
 }

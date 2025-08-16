@@ -72,7 +72,7 @@ export default function MenuSection() {
           </Card>
         ))}
       </div>
-      <Button className="rounded-md mt-10 bg-orange-400 ">More Menu</Button>
+      <Button className="rounded-md mb-10 mt-10 bg-orange-400 ">More Menu</Button>
     </section>
   );
 }

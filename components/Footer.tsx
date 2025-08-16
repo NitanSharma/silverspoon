@@ -1,18 +1,21 @@
-import React from 'react';
-import { FaBowlFood } from 'react-icons/fa6';
-import { FaInstagram } from 'react-icons/fa';
-import { FaFacebook } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
+import Link from 'next/link';
+import { CiForkAndKnife } from 'react-icons/ci';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <section className="bg-[#FFF9E9] container px-4 mx-auto flex flex-col items-center justify-center text-center">
-      <div className="flex items-center justify-between w-full h-[15vw] mb-4">
-        <div className="flex flex-col">
-          <p className="text-3xl font-bold flex items-center gap-2 mb-2">
-            Let &apos;s Food <FaBowlFood />
+    <section className="bg-[#FFF9EA] container px-4 mx-auto flex flex-col items-center justify-center text-center border-t">
+      <div className="grid grid-cols-1 md:grid-cols-4 px-4 py-10 w-full gap-4">
+        <div className="flex items-center justify-center gap-4 flex-col">
+          <h1 className="flex items-center text-2xl md:text-3xl font-bold">
+            SilverSpon{' '}
+            <span>
+              <CiForkAndKnife className="text-orange-500 font-bold text-2xl" />
+            </span>
+          </h1>
+          <p className=" font-semibold text-neutral-950/50">
+            Jalan Semangka Raya, Telaga Murni{' '}
           </p>
-          <p className="text-xl mb-3">Jalan Semangka Raya, Telaga Murni </p>
           <p className="text-2xl flex gap-3 mb-2">
             <FaInstagram />
             <FaFacebook />
@@ -20,34 +23,45 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex flex-col ">
-          <p className="text-2xl font-bold flex items-center gap-2 mb-2">
-            Company
-          </p>
-          <p className="text-lg mb-1 text-[#666261]">Career</p>
-          <p className="text-lg mb-1 text-[#666261]">How It Work</p>
-        </div>
+        <div className="flex flex-col  ">
+          <h1 className="font-bold text-2xl">Company</h1>
 
-        <div className="flex flex-col ">
-          <p className="text-2xl font-bold flex items-center gap-2 mb-2">
-            Policy
-          </p>
-          <p className="text-lg mb-1 text-[#666261]">Privacy</p>
-          <p className="text-lg mb-1 text-[#666261]">Shipping</p>
+          <Link href="/#" className="font-semibold text-neutral-950/50 ">
+            About us
+          </Link>
+          <Link href="/#" className=" font-semibold text-neutral-950/50 ">
+            Career
+          </Link>
+          <Link href="/#" className="font-semibold text-neutral-950/50  ">
+            How it Work
+          </Link>
         </div>
+        <div className="flex flex-col  ">
+          <h1 className="font-bold text-2xl">Policy</h1>
 
-        <div className="flex flex-col">
-          <p className="text-2xl font-bold flex items-center gap-2 mb-2">
-            Get In Touch
+          <Link href="/#" className="font-semibold text-neutral-950/50 ">
+            FAQ
+          </Link>
+          <Link href="/#" className=" font-semibold text-neutral-950/50 ">
+            Privacy
+          </Link>
+          <Link href="/#" className="font-semibold text-neutral-950/50  ">
+            Shipping
+          </Link>
+        </div>
+        <div className="flex flex-col  ">
+          <h1 className="font-bold text-2xl">Get In Touch</h1>
+
+          <Link href="/#" className="font-semibold text-neutral-950/50 ">
+            +91123456789
+          </Link>
+          <p className=" font-semibold text-neutral-950/50 ">
+            silverspoon@gmail.com
           </p>
-          <p className="text-lg mb-1 text-neutral-900/60">+62 896 7311 2769</p>
-          <p className="text-lg mb-1 text-[#666261]">food@example.com</p>
         </div>
       </div>
 
-      <div className="w-full h-1 border-b"></div>
-
-      <p className="text-md font-semibold m-4">
+      <p className="text-md font-semibold text-neutral-900/50 m-4">
         {new Date().getFullYear()} Let&apos;sFood. ALL RIGHT RESERVED
       </p>
     </section>
