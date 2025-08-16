@@ -36,7 +36,7 @@ export default function HowItWork() {
       </p>
       <div className="grid md:grid-cols-3 gap-6 ">
         {services.map((service) => (
-          <Card key={service.heading} className="h-80 w-80 mt-10 bg-transparent border-none flex items-center justify-center">
+          <Card key={service.heading} className="h-80 w-80 mt-10 bg-transparent border-0 flex items-center justify-center shadow-none">
             <Image src={service.image} height={40} width={200} alt={service.heading} />
             <CardTitle>{service.heading}</CardTitle>
             <CardDescription className='font-semibold text-neutral-900/70'>{service.description}</CardDescription>
