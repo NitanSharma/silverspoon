@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import HeroSection from '@/components/HeroSection';
 import HowItWork from '@/components/HowItWork';
 import MenuSection from '@/components/MenuSection';
@@ -8,6 +9,7 @@ export default function page() {
       <HeroSection />
       <HowItWork />
       <MenuSection />
+      <Footer/>
     </main>
   );
 }
