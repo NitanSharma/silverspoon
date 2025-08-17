@@ -11,9 +11,9 @@ import { HiOutlineMenuAlt3, HiOutlineX } from 'react-icons/hi';
 
 const routes = [
   { name: 'Home', path: '/' },
-  { name: 'Menu', path: '/#menu' },
-  { name: 'About', path: '/#about' },
-  { name: 'Contact', path: '/#contact' },
+  { name: 'Menu', path: '/menu' },
+  { name: 'About', path: '/about' },
+  { name: 'Contact', path: '/contact' },
 ];
 
 export default function Header() {
