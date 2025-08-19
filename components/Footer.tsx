@@ -26,26 +26,32 @@ const Footer = () => {
         <div className="flex flex-col  ">
           <h1 className="font-bold text-2xl">Company</h1>
 
-          <Link href="/#" className="font-semibold text-neutral-950/50 ">
+          <Link href="/about" className="font-semibold text-neutral-950/50 ">
             About us
           </Link>
-          <Link href="/#" className=" font-semibold text-neutral-950/50 ">
+          <Link href="/career" className=" font-semibold text-neutral-950/50 ">
             Career
           </Link>
-          <Link href="/#" className="font-semibold text-neutral-950/50  ">
+          <Link
+            href="#how-it-works"
+            className="font-semibold text-neutral-950/50  "
+          >
             How it Work
           </Link>
         </div>
         <div className="flex flex-col  ">
           <h1 className="font-bold text-2xl">Policy</h1>
 
-          <Link href="/#" className="font-semibold text-neutral-950/50 ">
+          <Link href="/faq" className="font-semibold text-neutral-950/50 ">
             FAQ
           </Link>
-          <Link href="/#" className=" font-semibold text-neutral-950/50 ">
+          <Link href="/privacy" className=" font-semibold text-neutral-950/50 ">
             Privacy
           </Link>
-          <Link href="/#" className="font-semibold text-neutral-950/50  ">
+          <Link
+            href="/shipping"
+            className="font-semibold text-neutral-950/50  "
+          >
             Shipping
           </Link>
         </div>
