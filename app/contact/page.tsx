@@ -1,18 +1,20 @@
+import { Button } from "@/components/ui/button";
+
 export default function Page() {
   return (
-    <main className="min-h-screen py-20 bg-gray-50">
-      <section className="container mx-auto px-6">
+    <main className="min-h-screen py-20">
+      <section className="container mx-auto px-4 min-h-screen">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Contact Us</h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Have questions, feedback, or just want to say hello? We'd love to
+          <p  className="font-semibold text-neutral-900/70 max-w-2xl mx-auto">
+            Have questions, feedback, or just want to say hello? We apos;d love to
             hear from you!
           </p>
         </div>
 
         {/* Contact Info + Form */}
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-10 px-4">
           {/* Contact Info */}
           <div className="space-y-6">
             <div>
@@ -66,17 +68,17 @@ export default function Page() {
                 Message
               </label>
               <textarea
-                rows="4"
+               
                 placeholder="Write your message..."
                 className="w-full p-3 border rounded-lg focus:ring focus:ring-blue-200"
               ></textarea>
             </div>
-            <button
+            <Button
               type="submit"
               className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
             >
               Send Message
-            </button>
+            </Button>
           </form>
         </div>
       </section>

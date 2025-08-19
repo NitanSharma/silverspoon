@@ -90,7 +90,7 @@ export default function Header() {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'tween', duration: 0.3 }}
-            className="fixed top-14 right-0 w-2/3 h-screen backdrop-blur-3xl bg-[#FFF9EA]] p-6 flex flex-col gap-6 md:hidden"
+            className="fixed top-14 right-0 w-2/3 h-screen backdrop-blur-3xl bg-[#FFF9EA] p-6 flex flex-col gap-6 md:hidden"
           >
             {routes.map((route) => (
               <Link
